@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "chart.js": "^2.5.0",
+    "d3": "^4.8.0",
+    "paper": "^0.11.3",
     "reveal.js": "^3.4.1"
   },
   "devDependencies": {

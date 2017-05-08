@@ -94,6 +94,15 @@ p.description {
         padding-top: 20px;
         width: 100%;
     }
+    .single_word {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
 }
 
 .text {
