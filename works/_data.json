@@ -1,0 +1,13 @@
+{
+
+    "work2": {
+        "title": "This is a work of art",
+        "date": "2016",
+        "image": "post1.jpg"
+    },
+    "work": {
+        "title": "This is a second work of art",
+        "date": "2017",
+        "image": "post1.jpg"
+    }
+}

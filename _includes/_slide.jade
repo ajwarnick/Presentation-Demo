@@ -1,0 +1,19 @@
+//- Blog Post Template
+    =========================
+    This is the template which is applied to each blog post. In _layout.jade, 
+    this template is included as a partial if the file is in the /blog
+    directory.
+    =========================
+
+//- Include mixins from global mixins file
+
+include _mixins
+
+section.present(data-markdown='', data-markdown-parsed='true', style='top: 206.5px; display: block;')
+    h1#reveal-boilerplate reveal-boilerplate
+      p
+        | Boilerplate for 
+        a(href='http://lab.hakim.se/reveal-js/') revela.js
+        |  presentation.
+
+

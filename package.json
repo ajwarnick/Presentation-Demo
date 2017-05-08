@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "reveal.js": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.5.1"
+  }
+}
