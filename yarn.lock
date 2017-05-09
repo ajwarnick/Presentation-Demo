@@ -1786,6 +1786,10 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
+plyr@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/plyr/-/plyr-2.0.12.tgz#e999d07a0e9e5f3747b00637e46c051675a36d0d"
+
 preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
