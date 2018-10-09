@@ -1,25 +1,66 @@
 <!doctype html>
 <html>
+    <head>
+        <%- include("partial/_head") %>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
 
-<head>
-    <%- include("partial/_head") %>
-</head>
+                <%- partial("partial/_slides", {
+                    slides: {
+                        one : {
+                            type: "youtube",
+                            text_right: "",
+                            text_left: "",
+                            text_top: "",
+                            text_bottom: "",
+                            youtube_id: "bTqVqk7FSmY"
+                        },
+                        two : {
+                            type: "work",
+                            title: "llegal Documents: or The Actualization of Casual Labor", 
+                            year: "2016", 
+                            materials: "House Paint, Drop Cloth, Day Labor", 
+                            description: "A painting produced by an undocumented worker from El Salvador following a set of instructions given by the artist.", 
+                            img_url: "http://indexhibit.anthonywarnick.com/files/dimgs/rsz_h600_34_110.jpg"
+                        },
+                        three : {
+                            type: "quote",
+                            text_right: "Test", 
+                            text_left: "And More",
+                            text_top: "",
+                            text_bottom: "",
+                            quote: "llegal Documents: or The Actualization of Casual Labor",
+                            author: "Anthony"
+                        },
+                        five : {
+                            type: "quote",
+                            text_right: "more", 
+                            text_left: "And",
+                            text_top: "",
+                            text_bottom: "",
+                            quote: "llegal Documents: or The Actualization of Casual Labor",
+                            author: ""
+                        },
+                        four : {
+                            type: "video",
+                            poster_link: "", 
+                            mp4_link: "img/For_Background.mp4",
+                            webm_link: "",
+                            caption_link: "",
+                            text_right: "",
+                            text_left: "",
+                            text_top: "",
+                            text_bottom: ""
+                        }
+                    }             
+                }) %>
 
-<body>
-    <div class="reveal">
-        <div class="slides">
-            <%- include("slides/_slide4") %>
-
-            <%- include("slides/_slide1") %>
-
-            <%- include("slides/_slide2") %>
-
-            <%- include("slides/_slide3") %>
+            </div>
         </div>
-    </div>
 
-    <%- include("partial/_js") %>
+        <%- include("partial/_js") %>
 
-</body>
-
+    </body>
 </html>

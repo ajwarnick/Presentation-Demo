@@ -1,0 +1,55 @@
+<% Object.keys(slides).forEach(function(elem){ %>
+    <% if(slides[elem].type == "youtube"){ %>
+
+        <%- partial("_youtube_slide", {
+            text_right: slides[elem].text_right,
+            text_left: slides[elem].text_left,
+            text_top: slides[elem].text_top,
+            text_bottom: slides[elem].text_bottom,
+            youtube_id: slides[elem].youtube_id
+        }) %>
+
+    <% }else if(slides[elem].type == "work"){ %>
+
+        <%- partial("_work_slide", { 
+            title: slides[elem].title, 
+            year: slides[elem].year, 
+            materials: slides[elem].materials, 
+            description: slides[elem].description, 
+            img_url: slides[elem].img_url
+        }) %>
+
+    <% }else if(slides[elem].type == "quote"){ %>
+
+        <%- partial("_quote_slide", { 
+            text_right: slides[elem].text_right, 
+            text_left: slides[elem].text_left,
+            text_top: slides[elem].text_top,
+            text_bottom: slides[elem].text_bottom,
+            quote: slides[elem].quote,
+            author: slides[elem].author
+        }) %>
+
+    <% }else if(slides[elem].type == "video"){ %>
+
+     <%- partial("_video_slide", {
+        poster_link: slides[elem].poster_link, 
+        mp4_link: slides[elem].mp4_link,
+        webm_link: slides[elem].webm_link,
+        caption_link: slides[elem].caption_link,
+        text_right: slides[elem].text_right,
+        text_left: slides[elem].text_left,
+        text_top: slides[elem].text_top,
+        text_bottom: slides[elem].text_bottom
+    }) %>
+
+    <% } %>
+<% }); %>
+
+
+
+
+
+ 
+
+               
