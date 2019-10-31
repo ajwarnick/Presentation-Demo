@@ -2,10 +2,11 @@
 
 @import '../node_modules/reveal.js/css/reveal.scss';
 //@import '../node_modules/plyr/dist/plyr.css';
-@import '../node_modules/plyr/src/scss/plyr.scss';
-
+// @import '../node_modules/plyr/src/scss/plyr.scss';
 @import 'reset';
 @import 'embed';
+
+
 body {
     font-family: $font-family-wild;
     font-size: 30px;
@@ -177,7 +178,7 @@ div.test_top {
 div.test_bottom {
     position: absolute;
     left: 0;
-    bottom: 2%;
+    bottom: 6vh;
     height: 30px;
     width: 100%;
     p {
@@ -261,4 +262,20 @@ div.test_bottom {
         height: $line_size;
         transform-origin: 0% 0%;
     }
+}
+
+
+iframe.codesandbox_embed{
+    width: 75vw; 
+    height:75vh; 
+    border:0; 
+    border-radius: 0px; 
+    overflow:hidden;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
