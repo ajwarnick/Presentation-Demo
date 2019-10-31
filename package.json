@@ -1,4 +1,17 @@
 {
+  "name": "warnick_presentation",
+  "description": "presentantion templete",
+  "version": "0.1.0",
+  "main": "index.html",
+  "author": "Anthony Warnick",
+  "license": "MIT",
+  "scripts": {
+    "scss": "watch \"sass scss/main.scss css/main.css\" scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajwarnick/Presentation-Demo"
+  },
   "dependencies": {
     "chart.js": "^2.9.1",
     "d3": "^5.12.0",
@@ -8,6 +21,7 @@
     "reveal.js": "^3.8.0"
   },
   "devDependencies": {
-    "sass": "^1.23.2"
+    "sass": "^1.23.2",
+    "watch": "^1.0.2"
   }
 }
