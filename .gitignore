@@ -2,3 +2,4 @@ old/_footer.jade
 old/_layout.jade
 old/index.jade
 old/_includes/_slide.jade
+node_modules
