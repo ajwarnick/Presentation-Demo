@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div role="application" data-transition-speed="default" data-background-transition="fade" class="reveal default slide ready">
+        <div role="application" class="reveal default">
             <div class="slides">
                 <section class="present">
                     <div class="full_slide">
@@ -56,7 +56,7 @@
 
                     </div>
                 </section>
-                <section hidden="" aria-hidden="true" class="future" style="display: block;">
+                <section hidden="" aria-hidden="true" class="future">
                     <div class="full_slide">
                         <div class="test_right">
                             <p class="title text">llegal Documents: or The Actualization of Casual Labor</p>
@@ -67,6 +67,15 @@
                         <div class="main_img"><img src="http://indexhibit.anthonywarnick.com/files/dimgs/rsz_h600_34_110.jpg" alt="A painting produced by an undocumented worker from El Salvador following a set of instructions given by the artist."></div>
                     </div>
                 </section>
+                <section>
+                    <!-- For Background Video -->
+                    <div class="full_slide" >
+                        <video autoplay muted loop>
+                            <source src="/img/For_Background.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </section>
+
             </div>
             <div class="backgrounds">
                 <div class="slide-background present" data-loaded="true" style="display: block;"></div>
@@ -90,6 +99,7 @@
             
             Reveal.initialize({
                 controls: true,
+                transition: 'fade',
                 display: 'block',
                 center: false,
                 width: '99%',
