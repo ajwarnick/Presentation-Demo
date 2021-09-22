@@ -1,0 +1,6 @@
+<div class="slides">
+    {% for slide in collections.slide %}
+        {% set s = slide %}
+        {% include slide.data.layout %}
+    {% endfor %}
+</div>
