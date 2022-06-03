@@ -7,11 +7,11 @@
     "start": "npm-run-all build:sass --parallel watch:*",
     "serve": "npx @11ty/eleventy --serve",
     "watch:eleventy": "npx @11ty/eleventy --watch --serve --port=5500",
-    "watch:sass": "sass --watch sass:css",
+    "watch:sass": "sass --watch scss:css",
 
     "build": "npm-run-all build:*",
     "build:eleventy": "npx @11ty/eleventy",
-    "build:sass": "sass --no-source-map sass:css",
+    "build:sass": "sass --no-source-map scss:css",
 
     "postbuild": "postcss css/*.css -u autoprefixer cssnano -r --no-map",
     "debug": "DEBUG=* npx @11ty/eleventy",
@@ -36,7 +36,6 @@
     "frappe-charts": "^1.6.2",
     "paper": "^0.12.15",
     "plyr": "^3.7.2",
-    "reveal": "0.0.4",
     "reveal.js": "^4.3.1"
   }
 }

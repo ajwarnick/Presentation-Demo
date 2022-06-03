@@ -4,8 +4,12 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('js');
     eleventyConfig.addPassthroughCopy('.nojekyll');
 
+    eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/dist": "reveal" });
 
     eleventyConfig.addCollection("everything", function(collection) {
+
+       
+
         let tagSet = new Set();
         collection.getAll().forEach(function(item) {
         if( "tags" in item.data ) {
