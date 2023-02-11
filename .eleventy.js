@@ -1,8 +1,12 @@
+const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
+
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy('css');
     eleventyConfig.addPassthroughCopy('js');
     eleventyConfig.addPassthroughCopy('.nojekyll');
+    eleventyConfig.addPlugin(eleventySass);
+
 
     eleventyConfig.addPassthroughCopy({ "node_modules/reveal.js/dist": "reveal" });
 
