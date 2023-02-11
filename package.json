@@ -1,41 +1,51 @@
 {
   "name": "warnick_presentation",
   "description": "presentantion templete",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "npm-run-all build:sass --parallel watch:*",
-    "serve": "npx @11ty/eleventy --serve",
-    "watch:eleventy": "npx @11ty/eleventy --watch --serve --port=5500",
-    "watch:sass": "sass --watch scss:css",
-
-    "build": "npm-run-all build:*",
-    "build:eleventy": "npx @11ty/eleventy",
-    "build:sass": "sass --no-source-map scss:css",
-
-    "postbuild": "postcss css/*.css -u autoprefixer cssnano -r --no-map",
-    "debug": "DEBUG=* npx @11ty/eleventy",
-    "forestry:preview": "eleventy --serve"
-  },
-  "author": "Anthony Warnick",
-  "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-navigation": "^0.3.3",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "autoprefixer": "^10.4.7",
-    "cssnano": "^5.1.10",
-    "postcss-cli": "^9.1.0",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.52.2"
-  },
+"scripts": {
+  "build": "npx @11ty/eleventy",
+  "build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
+  "start": "npx @11ty/eleventy --serve --quiet",
+  "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+  "debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+  "benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+},
+"repository": {
+  "type": "git",
+  "url": "git://github.com/ajwarnick/Presentation-Demo.git"
+},
+"author": {
+  "name": "Anthony Warnick",
+  "email": "anthony@warnick.co",
+  "url": "https://anthonywarnick.com/"
+},
+"license": "MIT",
+"engines": {
+  "node": ">=14"
+},
+"homepage": "https://github.com/ajwarnick/Presentation-Demo",
+"devDependencies": {
+  "@11ty/eleventy": "^2.0.0",
+  "@11ty/eleventy-img": "^3.0.0",
+  "@11ty/eleventy-navigation": "^0.3.5",
+  "@11ty/eleventy-plugin-bundle": "^1.0.1",
+  "@11ty/eleventy-plugin-rss": "^1.2.0",
+  "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+  "luxon": "^3.2.1",
+  "markdown-it-anchor": "^8.6.6",
+      "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.0"
+},
   "dependencies": {
-    "chart.js": "^3.8.0",
-    "d3": "^7.4.4",
-    "frappe-charts": "^1.6.2",
-    "paper": "^0.12.15",
-    "plyr": "^3.7.2",
-    "reveal.js": "^4.3.1"
-  }
+      "chart.js": "^4.2.1",
+      "d3": "^7.8.2",
+      "frappe-charts": "^1.6.2",
+      "paper": "^0.12.17",
+      "plyr": "^3.7.3",
+      "reveal.js": "^4.4.0"
+  },
+  "browserslist": [
+      "> 0.2%",
+      "not dead"
+  ]
 }

@@ -1,0 +1,16 @@
+<section>
+    <div class="full_slide">
+        <div class="test_right">
+            <p class="title text">{{ title }}{{ s.data.title }}</p>
+        </div>
+        <div style="position: relative; aspect-ratio: 16 / 9; width: 80%;">
+            <iframe 
+                src="{{ link }}{{ s.data.link }}"
+                loading="lazy" 
+                style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" 
+                allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;" 
+                allowfullscreen="true"
+            ></iframe>
+        </div>
+    </div>
+</section>
