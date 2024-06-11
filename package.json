@@ -1,7 +1,7 @@
 {
   "name": "warnick_presentation",
   "description": "presentantion templete",
-  "version": "3.0.0",
+  "version": "3.5.0",
   "main": "index.js",
 "scripts": {
   "build": "npx @11ty/eleventy",
@@ -26,23 +26,23 @@
 },
 "homepage": "https://github.com/ajwarnick/Presentation-Demo",
 "devDependencies": {
-  "@11ty/eleventy": "^2.0.0",
-  "@11ty/eleventy-img": "^3.0.0",
+  "@11ty/eleventy": "^2.0.1",
+  "@11ty/eleventy-img": "^4.0.2",
   "@11ty/eleventy-navigation": "^0.3.5",
   "@11ty/eleventy-plugin-bundle": "^1.0.1",
   "@11ty/eleventy-plugin-rss": "^1.2.0",
   "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-  "luxon": "^3.2.1",
-  "markdown-it-anchor": "^8.6.6",
-  "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.0"
+  "luxon": "^3.4.4",
+  "markdown-it-anchor": "^9.0.1",
+  "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.3.0"
 },
   "dependencies": {
-      "chart.js": "^4.2.1",
-      "d3": "^7.8.2",
+      "chart.js": "^4.4.3",
+      "d3": "^7.9.0",
       "frappe-charts": "^1.6.2",
       "paper": "^0.12.17",
-      "plyr": "^3.7.3",
-      "reveal.js": "^4.4.0"
+      "plyr": "^3.7.8",
+      "reveal.js": "^5.1.0"
   },
   "browserslist": [
       "> 0.2%",
